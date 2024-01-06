@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>PhiloPhysics - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-header {
+            background-color: #368ee7; /* Dark Navy Blue */
+            animation: headerFadeIn 1s ease-in-out;
+        }
+
+        @keyframes headerFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .center-cards {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+            
+        .card {
+            max-width: 100%;
+            height: 100%; /* Set a fixed height for both cards */
+        }
+
+        .container {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-header text-white text-center py-5">
+        <img src="university_logo.png" alt="University Logo" width="100">
+        <h1>Philo Physics</h1>
+        <p class="lead">Your Source for Physics Notes and Revisions</p>
+    </header>
+    <section class="container center-cards">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="card">
+                    <!-- <img src="semester1_image.png" class="card-img-top" alt="Semester 1"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Semester 1</h5>
+                        <p class="card-text">Find resources for Semester 1, including notes and formulas.</p>
+                        <a href="notes1/semester1.html" class="btn btn-primary btn-block">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="card">
+                    <img src="semester2_image.jpg" class="card-img-top" alt="Semester 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Semester 2</h5>
+                        <p class="card-text">Find resources for Semester 2, including notes and formulas.</p>
+                        <a href="notes2/semester2.html" class="btn btn-primary btn-block">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 PhiloPhysics</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
