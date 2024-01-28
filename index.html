@@ -5,38 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>PhiloPhysics - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .custom-header {
-            background-color: #091e34; /* Dark Navy Blue */
-            animation: headerFadeIn 1s ease-in-out;
-        }
-
-        @keyframes headerFadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .center-cards {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-            
-        .card {
-            max-width: 100%;
-            height: 100%; /* Set a fixed height for both cards */
-        }
-
-        .container {
-            margin-bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <header class="custom-header text-white text-center py-5">
@@ -75,5 +44,31 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to adjust styles based on screen size
+            function adjustStyles() {
+                if ($(window).width() < 768) {
+                    $('.custom-header').css('font-size', '24px');
+                    $('.center-cards').css({
+                        'flex-direction': 'column',
+                        'align-items': 'center'
+                    });
+                    $('.card').css('max-width', '100%');
+                } else {
+                    $('.custom-header').css('font-size', ''); // Reset font size
+                    $('.center-cards').css({
+                        'flex-direction': '',
+                        'align-items': ''
+                    });
+                    $('.card').css('max-width', ''); // Reset max-width
+                }
+            }
+
+            // Call adjustStyles on page load and window resize
+            $(window).on('load resize', adjustStyles);
+        });
+    </script> -->
 </body>
 </html>

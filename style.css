@@ -1,0 +1,30 @@
+.custom-header {
+    background-color: #091e34; /* Dark Navy Blue */
+    animation: headerFadeIn 1s ease-in-out;
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.center-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+    
+.card {
+    max-width: 100%;
+    height: 100%; /* Set a fixed height for both cards */
+}
+
+.container {
+    margin-bottom: 0;
+}
